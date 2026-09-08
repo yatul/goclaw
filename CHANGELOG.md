@@ -24,6 +24,10 @@ All notable changes to GoClaw are documented here. For full documentation, see [
   Task detail dialog gets Retry and Cancel buttons. Previously these transitions
   were reachable only through the lead agent's `team_tasks` tool, so a task that
   ended up blocked or stale could not be recovered from the UI (#506).
+- **Task detail dialog shows the full task UUID with one-click copy** — the
+  short identifier (`T-015-cc8e`) carries only the last four hex characters of
+  the UUID, while the agent-facing `team_tasks` tool and RPCs take the full
+  UUID, so a human had no way to name a task to the lead from the dashboard.
 
 - **Behavior UX sidecar delivery overrides** — Adds sidecar-generated Quick
   Acknowledgement and Intermediate Replies with provider/model, timeout, token,
